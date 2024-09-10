@@ -24,15 +24,37 @@
             <div class="profile">
                <!-- <img src="your-photo.jpg" alt="Profile Picture">-->
                 <div class="bio">
-                    <h3>Hi, I'm Reese Tateo!</h3>
-                    <p>I'm a recent graduate from Vanderbilt University with a double major in Computer Science and Mathematics and a minor in Engineering Management.</p>
-                    <!--<p>In addition to my technical expertise, I am an avid traveler and enjoy exploring new cultures. I believe in continuous learning and am excited to tackle new challenges and opportunities that come my way.</p>-->
+                    <h3>Hi, I'm Reese!</h3>
+                    <p>I'm a recent graduate from Vanderbilt University with a double major in Computer Science and Mathematics, and a minor in Engineering Management.</p>
+                    <p>I'm always eager to continue my journey of learning and growth, and I'm excited about opportunities to make a meaningful impact through innovative technology and data-driven solutions.</p>
+                    <button class="resume-button" id="resume-button" onclick="toggleResume()">View Resume</button>
+            <div class="resume-container" id="resume-container">
+                <iframe src="https://drive.google.com/file/d/1pfS2xB9T8vjsVMWq6LSqnVEKqEvYfRZM/preview" allowfullscreen></iframe>
+            </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <p>© 2024 Reese Tateo. All rights reserved.</p>
+        <div class="footer-content">
+            <p>© 2024 Reese Tateo. All rights reserved.</p>
+            <p>Follow me on <a href="https://www.linkedin.com/in/reese-tateo" target="_blank">LinkedIn</a> | <a href="https://github.com/reesetateo" target="_blank">GitHub</a></p>
+        </div>
     </footer>
+    <script>
+        function toggleResume() {
+            const resumeContainer = document.getElementById('resume-container');
+            const resumeButton = document.getElementById('resume-button');
+
+            // Toggle visibility of resume container
+            if (resumeContainer.style.display === 'none' || resumeContainer.style.display === '') {
+                resumeContainer.style.display = 'block';
+                resumeButton.textContent = 'Hide Resume';
+            } else {
+                resumeContainer.style.display = 'none';
+                resumeButton.textContent = 'View Resume';
+            }
+        }
+    </script>
 </body>
 </html>
