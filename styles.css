@@ -1,91 +1,259 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #1B3C2E;
-    color: white;
-}
-
-header {
-    background-color: #1B3C2E;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-nav ul {
-    list-style-type: none;
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #499f6d;  /* Darker background for better contrast */
+    color: #ecf0f1;  /* Light text color */
+    line-height: 1.6;
     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.search-container {
+/* Container to handle layout */
+.container {
     display: flex;
-    align-items: center;
-}
-
-.search-container input {
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-}
-
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 50px;
-}
-
-.image-container {
+    flex-direction: column;
     flex: 1;
 }
 
-.image-container img {
-    width: 100%;
-    max-width: 300px; /* Adjust as necessary */
-    border-radius: 10px;
+/* Header and Navbar */
+header {
+    background-color: #206449;
 }
 
-.text-container {
-    flex: 2;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.text-container h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+.navbar h1 {
+    font-size: 1.8em;
+    color: #ecf0f1;
 }
 
-.text-container p {
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ecf0f1;
+    padding: 8px 12px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #1c836e;
+    color: #fff;
+    border-radius: 4px;
+}
+
+/* Main Section */
+main {
+    flex: 1;
+}
+
+.intro {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.intro h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ecf0f1;
+}
+
+.intro p {
+    font-size: 1.2em;
     margin-bottom: 20px;
 }
 
-button {
-    background-color: white;
-    color: #1B3C2E;
-    border: none;
+.view-projects {
+    display: inline-block;
     padding: 10px 20px;
-    border-radius: 5px;
+    font-size: 1.1em;
+    color: #206449;
+    background-color: #ecf0f1;
+    border: none;
     cursor: pointer;
-    font-weight: bold;
+    text-decoration: none; /* Removes underline from link */
+    transition: background 0.3s ease, transform 0.2s ease;
+    border-radius: 4px; /* Add border-radius for rounded corners */
 }
 
-button:hover {
-    background-color: #f1f1f1;
+.view-projects:hover {
+    background-color: #1c836e;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #206449;
+    color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.footer-content a {
+    color: #2bb79b;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .intro h2 {
+        font-size: 2em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+}
+/* Container for iFrame */
+/* Ensure iFrame is Responsive and Size Adjusted */
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    max-width: 60%; /* Adjust width as needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+iframe {
+    width: 100%;
+    height: 450px; /* Adjust height as needed */
+    border: none;
+}
+
+/* Project Details Styling */
+.project-details {
+    padding: 20px;
+    text-align: center;
+}
+
+.project-details h2 {
+    margin-bottom: 20px;
+}
+
+.project-details p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+
+/* Container for Project Buttons */
+.project-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+    margin-top: 40px;
+}
+
+.project-button {
+    display: block;
+    width: 200px; /* Adjust width as needed */
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #064f39;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.project-button:hover {
+    background-color: #0e4128;
+    transform: scale(1.05);
+}
+
+/* Ensure Buttons are Responsive */
+@media (max-width: 768px) {
+    .project-buttons {
+        flex-direction: column;
+    }
+
+    .project-button {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+
+/* Other styles remain the same */
+/* Image Gallery Styling */
+/* Flexbox container to align images side by side */
+/* Flexbox container to align images side by side */
+/* Flexbox container to align images side by side */
+.image-gallery {
+    display: flex;
+    justify-content: center; /* Centers images horizontally */
+    align-items: flex-start; /* Aligns images at the top */
+    gap: 20px; /* Space between images */
+    margin: 20px 0;
+}
+
+/* Styling for individual images */
+.image-gallery img {
+    width: 400px; /* Adjust this value to control the width */
+    height: 260px; /* Adjust this value to control the height */
+    object-fit: cover; /* Ensures images cover the container without distortion */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow for better look */
+}
+
+
+
+
+
+
+/* Project Details Styling */
+.project-details {
+    padding: 20px;
+    text-align: center;
+}
+
+.project-details h2 {
+    margin-bottom: 20px;
+}
+
+.project-details p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
 }
