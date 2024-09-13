@@ -40,7 +40,7 @@ header {
 
 .navbar h1 {
     font-size: 1.8em;
-    color: #62c3c3;
+    color: #5cb6b6;
     font-weight: 15;
 }
 
@@ -55,7 +55,7 @@ header {
 
 .navbar a {
     text-decoration: none;
-    color: #62c3c3;
+    color: #5cb6b6;
     padding: 8px 12px;
     transition: background 0.3s ease, color 0.3s ease;
 }
@@ -109,7 +109,7 @@ main {
 /* Footer */
 footer {
     background-color: #effbfc;
-    color: #62c3c3;
+    color: #5cb6b6;
     padding: 20px 0;
     text-align: center;
     font-weight: 15;
@@ -369,7 +369,7 @@ iframe {
 }
 
 .resume-button:hover {
-    background-color: #339f9f; /* Darker shade for hover effect */
+    background-color: #38abab; /* Darker shade for hover effect */
     transform: scale(1.05);
 }
 
