@@ -325,7 +325,7 @@ iframe {
 
 .profile-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start; /* Align items at the top */
     max-width: 1000px; /* Adjust as needed */
     margin: 0 auto;
