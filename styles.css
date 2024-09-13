@@ -8,8 +8,8 @@
 /* Body and Background */
 body {
     font-family: American Typewriter, serif;
-    background-color: #c6f0d8;  /* Darker background for better contrast */
-    color: #208365;  /* Light text color */
+    background-color: #66cece;  /* Darker background for better contrast */
+    color: #effbfc;;  /* Light text color */
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@ body {
 
 /* Header and Navbar */
 header {
-    background-color: #398466;
+    background-color: #effbfc;
     font-weight: 15;
 }
 
@@ -40,7 +40,7 @@ header {
 
 .navbar h1 {
     font-size: 1.8em;
-    color: #ecf0f1;
+    color: #62c3c3;
     font-weight: 15;
 }
 
@@ -55,14 +55,14 @@ header {
 
 .navbar a {
     text-decoration: none;
-    color: #ecf0f1;
+    color: #62c3c3;
     padding: 8px 12px;
     transition: background 0.3s ease, color 0.3s ease;
 }
 
 .navbar a:hover {
-    background-color: #145f50;
-    color: #fff;
+    background-color: #62c3c3;
+    color: #effbfc;
     border-radius: 4px;
 }
 
@@ -79,7 +79,7 @@ main {
 .intro h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #398466;
+    color: #effbfc;
 }
 
 .intro p {
@@ -91,8 +91,8 @@ main {
     display: inline-block;
     padding: 10px 20px;
     font-size: 1.1em;
-    color: #206449;
-    background-color: #ecf0f1;
+    color: #62c3c3;
+    background-color: #effbfc;
     border: none;
     cursor: pointer;
     text-decoration: none; /* Removes underline from link */
@@ -101,15 +101,15 @@ main {
 }
 
 .view-projects:hover {
-    background-color: #1c836e;
-    color: #fff;
+    background-color: #62c3c3;
+    color: #effbfc;
     transform: scale(1.05);
 }
 
 /* Footer */
 footer {
-    background-color: #398466;
-    color: #ecf0f1;
+    background-color: #effbfc;
+    color: #62c3c3;
     padding: 20px 0;
     text-align: center;
     font-weight: 15;
@@ -125,7 +125,7 @@ footer {
 }
 
 .footer-content a {
-    color: #6df5da;
+    color: #1f9999;
     text-decoration: none;
 }
 
@@ -208,16 +208,17 @@ iframe {
     font-size: .9em;
     font-family: 'Lato',sans-serif;
     font-weight: 15;
-    color: #fff;
-    background-color: #064f39;
+    color: #66cece;
+    background-color: #effbfc;
     text-decoration: none;
     border-radius: 8px;
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .project-button:hover {
-    background-color: #0e4128;
+    background-color: #3aa2a2;
     transform: scale(1.05);
+    color: #effbfc;
 }
 
 /* Ensure Buttons are Responsive */
@@ -277,7 +278,7 @@ iframe {
 .about-me {
     padding: 60px 20px;
     text-align: center;
-    background-color: #064f39;
+    background-color: #66cece;
     color: #333;
     font-family: 'Lato', sans-serif;
 }
@@ -285,7 +286,7 @@ iframe {
 .about-me h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #c6f0d8;
+    color: #effbfc;
     font-family: American Typewriter, serif;
 }
 
@@ -295,7 +296,7 @@ iframe {
     align-items: center;
     max-width: 800px;
     margin: 0 auto;
-    background: #c6f0d8;
+    background: #effbfc;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -305,13 +306,13 @@ iframe {
     width: 150px; /* Adjust size as needed */
     height: 150px; /* Maintain aspect ratio */
     border-radius: 50%; /* Circular profile picture */
-    border: 4px solid #064f39; /* Border color matching theme */
+    border: 4px solid #66cece; /* Border color matching theme */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .image-section {
     max-width: 24%; /* Adjust width */
-    background: #c6f0d8;
+    background: #effbfc;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -341,22 +342,17 @@ iframe {
 .bio h3 {
     font-size: 1.8em;
     margin-bottom: 10px;
-    color: #064f39;
+    color: #66cece;
     font-family: 'Lato', sans-serif;}
 
 .bio p {
     font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #555;
+    color: #42b2b2;
 }
 
-/* Nav Bar Active State */
-.navbar a.active {
-    background-color: #0e4128;
-    color: #fff;
-    border-radius: 4px;
-}
+
 
 /* Resume Button Styles */
 .resume-button {
@@ -364,7 +360,7 @@ iframe {
     padding: 10px 20px;
     font-size: 1em;
     color: #fff;
-    background-color: #064f39; /* Match with your theme color */
+    background-color: #66cece; /* Match with your theme color */
     text-decoration: none;
     border-radius: 4px;
     transition: background 0.3s ease, transform 0.2s ease;
@@ -373,7 +369,7 @@ iframe {
 }
 
 .resume-button:hover {
-    background-color: #0e4128; /* Darker shade for hover effect */
+    background-color: #339f9f; /* Darker shade for hover effect */
     transform: scale(1.05);
 }
 
@@ -394,7 +390,7 @@ iframe {
     border: none;}
 
    a {
-        color: #0f4f42;
+        color: #1b7070;
     }
 
     .button-container {
@@ -412,14 +408,14 @@ iframe {
     font-weight: 15;
     font-family: 'Lato', sans-serif;
     color: #fff;
-    background-color: #1c9e8b;
+    background-color: #3aa2a2;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .button:hover {
-    background-color: #23c6ef;
+    background-color: #1b7070;
 }
 
 .details{
@@ -439,8 +435,8 @@ iframe {
 
 .back-to-projects-button {
     padding: 5px 10px;
-    background-color: #064f39; /* Match your theme color */
-    color: #c6f0d8; /* Text color */
+    background-color: #3aa2a2; /* Match your theme color */
+    color: #effbfc; /* Text color */
     font-family: 'Roboto', sans-serif; /* Match your site font */
     text-decoration: none;
     border-radius: 5px;
@@ -449,6 +445,6 @@ iframe {
 }
 
 .back-to-projects-button:hover {
-    background-color: #043e2b; /* Darker shade for hover effect */
+    background-color: #1b7070; /* Darker shade for hover effect */
 }
 
