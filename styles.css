@@ -26,6 +26,7 @@ body {
 /* Header and Navbar */
 header {
     background-color: #398466;
+    font-weight: 15;
 }
 
 .navbar {
@@ -40,6 +41,7 @@ header {
 .navbar h1 {
     font-size: 1.8em;
     color: #ecf0f1;
+    font-weight: 15;
 }
 
 .navbar ul {
@@ -110,6 +112,7 @@ footer {
     color: #ecf0f1;
     padding: 20px 0;
     text-align: center;
+    font-weight: 15;
 }
 
 .footer-content {
@@ -122,7 +125,7 @@ footer {
 }
 
 .footer-content a {
-    color: #2bb79b;
+    color: #6df5da;
     text-decoration: none;
 }
 
@@ -175,6 +178,7 @@ iframe {
 
 .project-details {
     padding: 20px;
+    font-family: 'Lato', sans-serif;
     text-align: center;
 }
 
@@ -202,6 +206,8 @@ iframe {
     padding: 20px;
     text-align: center;
     font-size: .9em;
+    font-family: 'Lato',sans-serif;
+    font-weight: 15;
     color: #fff;
     background-color: #064f39;
     text-decoration: none;
@@ -367,3 +373,43 @@ iframe {
    a {
         color: #0f4f42;
     }
+
+    .button-container {
+        text-align: center; /* Center the button */
+        margin: 20px 0; /* Add some space around the button */
+        
+    }
+
+.button
+{
+    display: inline-block;
+    padding: 30px 50px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 15;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    background-color: #1c9e8b;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #23c6ef;
+}
+
+.details{
+    font-family: 'Lato', sans-serif;
+    padding: 70px;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px; 
+}
+
+.intro-proj{
+    font-family: 'Lato', sans-serif;
+    padding: 0px;
+    margin-top: 10px;
+    
+}
